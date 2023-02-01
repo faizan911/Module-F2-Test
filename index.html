@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="gallery">
+    <img src="./image1.jpg" id="img1">
+    <img src="./image2.jpg" id="img2">
+    <img src="./image3.jpg" id="img3">
+    <img src="./image4.jpg" id="img4">
+  </div>
+  
+  <div id="form" class="hidden">
+    <form>
+      <input type="text" id="name" placeholder="Name">
+      <input type="email" id="email" placeholder="Email">
+      <input type="text" id="username" placeholder="Username">
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  
+  <div id="displayUsername" class="hidden">
+    <p>Name: <span id="displayName"></span></p>
+    <p>Username: <span id="displayUsername"></span></p>
+  </div>
+  
+  <div id="dice" class="hidden">
+    <img src="./dice.jpg" id="diceImg">
+    <p id="badluck" class="hidden"><img src="./badluck.jpg" alt="badLuck"></p>
+    <p>Current dicevalue is : <span id="diceValue"></span></p>
+    <p>Total dicevalue is : <span id="totaldicevalue"></span></p>
+    <p id="diceCount">You have rolled the dice <span id="rollCount">0</span> times.</p>
+    <p id="clicklastimage"></p>
+  </div>
+  
+  <div id="coupon" class="hidden">
+    <p>Your coupon code is: <span id="couponCode"></span></p>
+    <img id="congratsImage" src="./congrats.jpg" style="display: none;">
+  </div>
+  
+  <div id="tryAgain" class="hidden">
+    <p>You need to score more than 10. <img src="./tryagain.jpg" alt="tryAgain"></p>
+  </div>
+  
+  <div id="badLuck" class="hidden">
+    <p>Bad luck!</p>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
